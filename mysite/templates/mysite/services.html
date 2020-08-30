@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="nav-title">
+  <h2 align="center">Services</h2>
+  <hr>
+</div>
+<div class="container">
+<div class="row">
+        {% for service in services %}
+
+                <div class="col s4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{{ service.service_img.url }}" style="height: 250px; overflow: hidden;">
+                        </div>
+                        <div class="card-content">
+                            <p>{{ service.service_name }}</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">{{ service.service_description }}</a>
+                        </div>
+                    </div>
+                </div>
+
+        {% endfor %}
+        </div>
+</div>
+
+
+
+
+{% endblock  %}

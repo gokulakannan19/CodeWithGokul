@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+  <div class="form-container">
+
+    <h3>Contact form</h3>
+    <form action="{% url 'contact' %}" method="post">
+      {% csrf_token %}
+
+      <div class="row">
+        <div class="col-6">
+          <label class="form-elements">Email</label>
+          <input type="email" class="form-control" placeholder="" name="email" id="sender-email" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <label class="form-elements">Full Name</label>
+          <input type="text" class="form-control" placeholder="" name="name" id="sender-name" rows=5 required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <label class="form-elements">Message</label>
+          <input type="textarea" class="form-control" placeholder="type your message here" name="message"
+            id="sender-message" required>
+        </div>
+      </div>
+      <div class=row>
+        <div class="button"><br><br>
+          <button type="submit" class="btn btn-outline-danger">Send Message</button>
+
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
+{% endblock  %}

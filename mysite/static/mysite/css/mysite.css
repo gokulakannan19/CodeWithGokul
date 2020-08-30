@@ -1,0 +1,49 @@
+.profile-overview{
+    background: black;
+    padding: 10px;
+    height: 100vh;
+    text-align: center;
+}
+
+.profile-name{
+    margin-top: 30px;
+    color: orange;
+    font-family: auto;
+    padding: 8px;
+
+}
+
+.profile-job{
+    margin-top: 30px;
+    color: orange;
+    font-family: auto;
+    padding: 8px;
+
+}
+
+.form-container{
+    margin-top: 30px;
+    padding: 20px;
+    background: aqua;
+    border-style: double;
+    border-color: red;
+}
+
+#sender-name, #sender-email{
+    border: chartreuse;
+    border-style: solid;
+}
+
+#sender-message{
+    border: chartreuse;
+    border-style: solid;
+    height: 100px;
+}
+
+.nav-title{
+    padding: 8px;
+    font-family: auto;
+    margin-top: 5px;
+    color: red;
+}
+

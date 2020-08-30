@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="nav-title">
+  <h2 align="center">Projects</h2>
+  <hr>
+</div>
+<div class="container-fluid">
+{% for project in projects %}
+
+<div class="card" style="width: 18rem;">
+  <img src="{{ project.project_img.url }}" class="card-img-top" alt="..." style="width: 100px, height: 100px">
+  <div class="card-body">
+    <h5 class="card-title">{{ project.project_name}}</h5>
+    <p class="card-text">{{ project.project_description}}</p>
+    <a href="{{ project.project_link }}" class="btn btn-primary">View Project</a>
+  </div>
+</div>
+<div class="container-fluid">
+{% endfor %}
+{% endblock  %}
