@@ -1,5 +1,5 @@
 .profile-overview{
-    background: black;
+    background: lightgoldenrodyellow;
     padding: 10px;
     height: 100vh;
     text-align: center;
@@ -7,7 +7,7 @@
 
 .profile-name{
     margin-top: 30px;
-    color: orange;
+    color: red;
     font-family: auto;
     padding: 8px;
 
@@ -15,18 +15,36 @@
 
 .profile-job{
     margin-top: 30px;
-    color: orange;
+    color: red;
     font-family: auto;
     padding: 8px;
 
 }
 
 .form-container{
+    -webkit-text-stroke-width: medium;
     margin-top: 30px;
     padding: 20px;
     background: aqua;
     border-style: double;
     border-color: red;
+}
+
+.contact-address{
+    font-size: larger;
+    font-style: inherit;
+    font-family: ui-monospace;
+    color: crimson;
+}
+
+footer{
+    
+    position: fixed;
+    bottom: 0px;
+    background: lightslategrey;
+    width: -webkit-fill-available;
+    font-style: revert;
+    font-family: emoji;
 }
 
 #sender-name, #sender-email{
